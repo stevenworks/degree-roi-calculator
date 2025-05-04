@@ -1,25 +1,64 @@
 # Degree ROI Calculator
 
 ## Overview
+The **Degree ROI Calculator** helps students and professionals evaluate the return on investment (ROI) of their degree program by comparing the total cost of the degree (tuition + living expenses) against their potential lifetime salary. It gives you insight into how long it will take to pay off your degree and the overall financial benefit over a 40-year career.
 
-The **Degree ROI Calculator** is a simple web app built with Streamlit to help students and professionals assess the return on investment (ROI) of their degree. Users can calculate how long it will take to pay off their degree based on expected salary and costs, then visualize the net value over their career. It's a perfect tool to help anyone understand the true financial impact of their education.
+This project is built using **Streamlit**, a Python framework for building interactive web apps.
 
 ## Features
+- Calculate the total cost of a degree (tuition and living expenses).
+- Estimate the time it will take to pay off the degree based on expected salary.
+- Visualize the net value of your degree over 40 years.
+- Generate a unique shareable link to share your results with others.
 
-- **Estimate payback period**: See how many years it will take for your degree to pay off based on your tuition, living costs, and starting salary.
-- **ROI calculations**: Get an estimated lifetime ROI from your degree, considering a 40-year career.
-- **Visualize your degree's value**: Interactive graph showing how the value of your degree accumulates over time.
-- **Social sharing**: Easily share your results with others via a link, allowing friends to see the calculations with pre-filled data.
+## How it Works
+1. **Input your degree details**:
+   - Select your major.
+   - Enter your expected starting salary or use the average salary for your selected major.
+   - Set your tuition and living cost per year.
+   - Choose the number of years it will take you to complete your degree.
 
-## How to Run the App Locally
+2. **View your results**:
+   - See how long it will take to pay off your degree.
+   - Get a lifetime ROI estimate.
+   - Visualize your net value over time in a graph.
 
-### Prerequisites
+3. **Share your results**:
+   - Once you’ve entered your details, a unique link will be generated that you can share with others. This link will show them the same results based on your inputs, making it easy to compare with friends and peers.
 
-Make sure you have Python installed on your system. If not, you can download it from [python.org](https://www.python.org/).
+## How to Run the Project Locally
 
-### Steps
-
-1. Clone the repository or download the app.py file to your local machine.
-2. Install the required dependencies:
+1. Clone this repository:
    ```bash
-   pip install streamlit pandas matplotlib
+   git clone https://github.com/stevenworks/degree-roi-calculator.git
+   cd degree-roi-calculator
+   ```
+Install dependencies:
+```bash
+pip install -r requirements.txt
+```
+Run the Streamlit app:
+
+```bash
+streamlit run app.py
+```
+Visit http://localhost:8501 in your web browser to interact with the app.
+
+## Customization
+You can customize the following in the app:
+
+Salary Data: Modify the average salary data for each major in the average_salaries dictionary.
+
+Design: Customize the look and feel by editing the Streamlit elements in app.py.
+
+## Future Enhancements
+User Authentication: Allow users to create accounts to save their results and track their progress over time.
+
+Additional Financial Data: Integrate real-world data about average salaries, tuition, and career advancement.
+
+Expanded ROI Calculation: Include additional factors such as job growth rates, inflation, and career shifts.
+
+## License
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+Enjoy calculating and sharing your degree's ROI! 📚💰
